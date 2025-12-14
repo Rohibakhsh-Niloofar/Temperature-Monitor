@@ -4,8 +4,9 @@ float Temperature;
 
 void setup()
 {
-  pinMode(3,OUTPUT);  //RED-LED
+  pinMode(3,OUTPUT);  //BLUE-LED
   pinMode(5,OUTPUT);  //GREEN-LED
+  pinMode(7,OUTPUT);  //RED-LED
   Serial.begin(9600);
 }
 
@@ -20,22 +21,22 @@ void loop()
   Serial.println(" C ");
 
   delay(3000);
-
-  if(Temperature <= 24.00)
+  if (Temperature < 24.00)
   {
-    digitalWrite(5,1);
+    digitalWrite(3,1);  //BLUE-LED-ON
+    digitalWrite(5,0);  //GREEN-LED-OFF
+    digitalWwrite(7,0); //RED-LED-OFF
+  }
+  else if (Temperature >= 24.00 && Temperature <= 28.00)
+  {
+    digitalWrite(5,1);  //GREEN-LED-ON
+    digitalWrite(3,0);  //BLUE-LED-OFF
+    digitalWrite(7,0);  //RED-LED-OFF
   }
   else
   {
-    digitalWrite(5,0);
-  }
-
-  if (Temperature >= 28.00)
-  {
-    digitalWrite(3,1);
-  }
-  else
-  {
-    digitalWrite(3,0);
+    digitalWrite(7,1);  //RED-LED-ON
+    digitalWrite(5,0);  //GREEN-LED-OFF
+    digitalWrite(3,0);  //BLUE-LED-OFF
   }
 }
