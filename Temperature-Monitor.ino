@@ -1,17 +1,23 @@
+int LM35Pin = A0;
+float voltage;
+float Temperature;
+
 void setup()
 {
   pinMode(3,OUTPUT);  //RED-LED
   pinMode(5,OUTPUT);  //GREEN-LED
+  Serial.begin(9600);
 }
 
 void loop() 
 {
-  digitalWrite(3,1);
-  delay(5000);
-  digitalWrite(3,0);
+  int TempValue = analogRead(LM35Pin);
+  voltage = TempValue *(5.0 / 1023.0);
+  Temperature = voltage * 100;
 
-  digitalWrite(5,1);
-  delay(5000);
-  digitalWrite(5,0);
-  
+  Serial.print("Temperature : ");
+  Serial.print(Temperature);
+  Serial.println(" C ");
+
+  delay(3000);
 }
