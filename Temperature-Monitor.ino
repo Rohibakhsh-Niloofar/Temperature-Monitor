@@ -20,4 +20,22 @@ void loop()
   Serial.println(" C ");
 
   delay(3000);
+
+  if(Temperature <= 24.00)
+  {
+    digitalWrite(5,1);
+  }
+  else
+  {
+    digitalWrite(5,0);
+  }
+
+  if (Temperature >= 28.00)
+  {
+    digitalWrite(3,1);
+  }
+  else
+  {
+    digitalWrite(3,0);
+  }
 }
