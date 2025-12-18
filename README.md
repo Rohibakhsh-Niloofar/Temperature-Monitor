@@ -1,5 +1,5 @@
 # Temperature Monitor
-## v1
+
 ### Overview 
 This project demanstarate a basic setup using an **LM35 temperature sensor** and 3 LEDs as visual indicators. The goal of the project is to work with `analog sensor`, `ADC conversion` and `conditional logic` in embedded systems.
 
