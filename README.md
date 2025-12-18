@@ -1,5 +1,5 @@
 # Temperature Monitor
-## V1.0.
+## v1
 ### Overview 
 This project demanstarate a basic setup using an **LM35 temperature sensor** and 3 LEDs as visual indicators. The goal of the project is to work with `analog sensor`, `ADC conversion` and `conditional logic` in embedded systems.
 
@@ -28,11 +28,11 @@ In this version instead of using display or application interface, the system pr
 <summary>3 LEDs </summary> 
 <ul>
 
-Blue LED (Low temperature)
+Blue(Low temperature)
 
-Green LED (Normal temperature)
+Green(Normal temperature)
 
-Red LED (High temperature)
+Red LED(High temperature)
   
 </ul>
 </details>
