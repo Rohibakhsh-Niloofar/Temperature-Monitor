@@ -1,4 +1,4 @@
-# Temperature Monitor 🌡️©️
+# Temperature Monitor 🌡️
 
 > [!NOTE]
 > 🚧 Currently, this project is under development.
@@ -13,9 +13,9 @@ This project demonstrates a basic setup using an **LM35 temperature sensor** and
 3. Breadbooard and jumper wires
 4. Resistors (Lower than 1K Ω)
 5. RGB LEDs
-   - Blue(Low temperature)
-   - Green(Normal temperature)
-   - Red LED(High temperature)
+   - Blue (Low temperature)
+   - Green (Normal temperature)
+   - Red (High temperature)
 
  ---
 
@@ -58,7 +58,7 @@ Temperature : 26.50 C
 
 ---
 
-### Future Improvements 
+### Future Improvements 🚀
 This project can be further enhanced in several ways to improve its functionality, accuracy, and usability. One possible improvement is adding `PWM control` to the LEDs, allowing their brightness to change gradually based on temperature variations rather than simple ON/OFF behavior. This would **provide a smoother and more intuitive visual representation** of temperature changes.
 
 Another enhancement would be integrating a `display module`, such as an **LCD or OLED**, to show the temperature directly without relying on the Serial Monitor. This would make the system more practical for standalone use. Additionally, implementing `audio or visual alerts`, such as a **buzzer or blinking patterns**, could help notify users when the temperature exceeds predefined thresholds.
@@ -67,7 +67,7 @@ For higher accuracy, the system could be improved by applying `sensor calibratio
 
 ---
 
-### Licence 
+### Licence ⚖️
 
 This project is released under the [MIT License](https://github.com/Rohibakhsh-Niloofar/Temperature-Monitor/blob/main/LICENSE)
 
