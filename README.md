@@ -33,9 +33,9 @@ This project demonstrates a basic setup using an **LM35 temperature sensor** and
 
 ### How does it work?
 
-The system operates by continuously measuring the ambient temperature using the LM35 sensor and processing this data within the Arduino. The LM35 generates an analog output voltage that is directly proportional to the surrounding temperature, with a scale factor of 10 mV per degree Celsius (°C). This analog signal is connected to the Arduino’s A0 pin, where it is read using the built-in Analog-to-Digital Converter (ADC).
+The system operates by continuously measuring the ambient temperature using the LM35 sensor and processing this data within the Arduino. The LM35 generates an analog output voltage that is directly proportional to the surrounding temperature, with a scale factor of **10 mV per degree Celsius (°C)**. This analog signal is connected to the Arduino’s **A0 pin**, where it is read using the built-in Analog-to-Digital Converter (ADC).
 
-The ADC converts the analog signal into a digital value ranging from 0 to 1023, based on the Arduino’s 10-bit resolution. This digital value is then converted back into voltage using the reference voltage of the board (5V), according to the following formula : 
+The ADC converts the analog signal into a digital value ranging from **0 to 1023**, based on the Arduino’s 10-bit resolution. This digital value is then converted back into voltage using the reference voltage of the board (5V), according to the following formula : 
 
 ```Cpp
 voltage = TempValue *(5.00 / 1023.00);
